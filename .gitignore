@@ -1,49 +1,38 @@
-# History files
+# Exclude default R data formats and R studio files that may accidentally save your data.
+.Rproj.user
 .Rhistory
-.Rapp.history
-
-# Session Data files
-.RData
-.RDataTmp
-
-# User-specific files
-.Ruserdata
-
-# Example code in package build process
-*-Ex.R
-
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
-.Rproj.user/
-
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.Rdata
 .httr-oauth
+.DS_Store
+.quarto
 
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
+# Exclude the following directories 
+/data/
+/output/
 
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
+# Exclude data file types
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+*.csv
+*.pdf
+*.svg
+*.RDS
+*.rds
 
-# R Environment Variables
-.Renviron
+# Exclude output file types
+*.html
 
-# pkgdown site
-docs/
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
 
-# translation temp files
-po/*~
-
-# RStudio Connect folder
-rsconnect/
+### Windows specific stuff ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
